@@ -14,9 +14,7 @@ puts "Welcome! Ready to play Tic Tac Toe? How many players do you have today?
 
     if input == "0"
       game = Game.new(player_1 = Players::Computer.new("X"), player_2 = Players::Computer.new("O"))
-      100.times do
-        game.play
-      end
+      game.play
 
 
     elsif input == "1"
