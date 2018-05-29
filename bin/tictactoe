@@ -8,7 +8,10 @@ puts "Welcome! Ready to play Tic Tac Toe? How many players do you have today?
 
       input = gets.strip
     if input == "wargames"
+      100.times do |game|
       game = Game.new(player_1 = Players::Computer.new("X"), player_2 = Players::Computer.new("O"))
+      game.play
+    end
 
     if input == "0"
       game = Game.new(player_1 = Players::Computer.new("X"), player_2 = Players::Computer.new("O"))
