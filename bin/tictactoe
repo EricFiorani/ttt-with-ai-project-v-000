@@ -7,11 +7,16 @@ puts "Welcome! Ready to play Tic Tac Toe? How many players do you have today?
       the computer or Type 2 if you are playing with a friend."
 
       input = gets.strip
-    if input == "war"
+    if input == "wargames"
+      game = Game.new(player_1 = Players::Computer.new("X"), player_2 = Players::Computer.new("O"))
+      times.do
+       game.play
 
     if input == "0"
       game = Game.new(player_1 = Players::Computer.new("X"), player_2 = Players::Computer.new("O"))
-      game.play
+      100.times do
+        game.play
+      end
 
 
     elsif input == "1"
