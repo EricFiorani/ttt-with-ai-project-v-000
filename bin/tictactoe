@@ -23,3 +23,11 @@ puts "Welcome! Ready to play Tic Tac Toe? How many players do you have today?
       elsif player = "2"
         game = Game.new(player_1 = Player::Computer.new("X"), player_2 = Player::Human.new("O"))
         game.play
+      end
+
+    else input == "2"
+      puts "Whoever goes first is player X"
+      game = Game.new(player_1 = Player::Human.new("X"), player_2 = Player::Human.new("O"))
+      game.play
+
+    end
