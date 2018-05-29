@@ -1,3 +1,7 @@
 #!/usr/bin/env ruby
 
 require_relative '../config/environment'
+
+puts "Welcome! Ready to play Tic Tac Toe? How many players do you have today?
+      Type "0" for computer simulation. Type "1" if you want to play against
+      the computer or Type "2" if you are playing with a friend."
