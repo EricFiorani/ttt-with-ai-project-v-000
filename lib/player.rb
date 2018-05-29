@@ -1,4 +1,3 @@
-module Players
 class Player
   attr_reader :token
 
@@ -6,5 +5,4 @@ class Player
     @token = token
   end
 
-end
 end
