@@ -4,7 +4,7 @@ module Players
 
     def initialize(token)
       super
-      @name = "Human"
+      @name = name
     end
 
     def move(board)
