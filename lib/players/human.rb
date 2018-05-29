@@ -1,11 +1,11 @@
 module Players
   class Human < Player
-    # attr_reader :name
-    #
-    # def initialize(token)
-    #   super
-    #   @name = name
-    # end
+    attr_reader :name
+
+    def initialize(token)
+      super
+      @name = name
+    end
 
     def move(board)
       puts "Enter a number 1 - 9"
