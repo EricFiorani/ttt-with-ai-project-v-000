@@ -16,4 +16,10 @@ puts "Welcome! Ready to play Tic Tac Toe? How many players do you have today?
     elsif input == "1"
       puts "If you want to go first, type in 1"
       puts "If you want the computer to go first, type in 2"
-      first_player = gets.strip
+      player = gets.strip
+      if player == "1"
+        game = Game.new(player_1 = Player::Human.new("X"), player_2 = Player::Computer.new("O"))
+        game.play
+      elsif player = "2"
+        game = Game.new(player_1 = Player::Computer.new("X"), player_2 = Player::Human.new("O"))
+        game.play
